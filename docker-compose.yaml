@@ -1,0 +1,14 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:12-alpine
+  ports:
+    - 3306:3306
+  volumes:
+    - ./data:/var/lib/postgres
+  environment:
+    - POSTGRES_DB: user
+    - POSTGRES_USER: user
+    - POSTGRES_PASSWORD: password
