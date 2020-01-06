@@ -13,4 +13,4 @@ services:
     environment:
       POSTGRES_DB: db
       POSTGRES_USER: user
-      POSTGRES_PASSWORD: example
+      POSTGRES_PASSWORD: password
