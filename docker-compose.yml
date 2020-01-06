@@ -5,10 +5,11 @@ services:
 
   db:
     image: postgres:12-alpine
-    restart: always
     ports:
       - 8080:8080
     volumes:
-      - ./data:/var/lib/bazadannih
+      - ./data:/var/lib/postgres
     environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: user
       POSTGRES_PASSWORD: password
