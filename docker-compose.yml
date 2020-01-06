@@ -9,8 +9,6 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./data:/var/lib/postgres
+      - ./data:/var/lib/bazadannih
     environment:
-      POSTGRES_DB: db
-      POSTGRES_USER: user
       POSTGRES_PASSWORD: password
